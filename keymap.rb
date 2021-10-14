@@ -45,4 +45,13 @@ kbd.define_mode_key :LOWER, [nil, :lower, 120, 150]
 kbd.define_mode_key :RAISE, [nil, :raise, 120, 150]
 kbd.define_mode_key :ADJUST, [nil, :adjust, 120, 150]
 
+rgb = RGB.new(
+  6,
+  6,
+  0,
+  false
+)
+rgb.effect = :breathing
+kbd.append rgb
+
 kbd.start!
