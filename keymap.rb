@@ -1,7 +1,3 @@
-while !$mutex
-  relinquish
-end
-
 kbd = Keyboard.new
 
 kbd.split = true
