@@ -50,7 +50,7 @@ rgb = RGB.new(
   0,
   false
 )
-rgb.effect = :breathing
+rgb.effect = :rainbow_mood
 kbd.append rgb
 
 kbd.start!
