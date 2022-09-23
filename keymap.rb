@@ -1,4 +1,5 @@
 require "via"
+require "sounder"
 
 kbd = Keyboard.new
 
@@ -57,5 +58,13 @@ rgb = RGB.new(
 )
 rgb.effect = :rainbow_mood
 kbd.append rgb
+
+sounder = Sounder.new(8)
+
+kbd.on_start do
+  if kbd.anchor?
+    sounder.play "T200 L8 O7 c O6 c"
+  end
+end
 
 kbd.start!
